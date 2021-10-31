@@ -1,5 +1,5 @@
 {
-  "name": "@jelee/vue-plugin",
+  "name": "@jelee/jelee-plugin",
   "version": "0.1.1",
   "main": "dist/jelee-plugin.common.js",
   "private": true,
@@ -48,6 +48,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jelee603/vue-plugin-test"
+    "url": "https://github.com/jelee603/jelee-plugin"
   }
 }
