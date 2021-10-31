@@ -1,19 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" style="width: 40px; height: 40px">
+    <span>Echart Test</span>
     <ChartTest/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import ChartTest from './components/ChartTest.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     ChartTest,
   }
 }

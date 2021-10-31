@@ -10,28 +10,36 @@
         name: 'lineChart',
         data() {
             return {
-
             };
         },
         mounted() {
             const myChart = echarts.init(this.$refs.main);
+            const getNumber = this.getRandomNumber;
 
             myChart.setOption({
-                title: {
-                    text: 'ECharts entry example'
-                },
+                // title: {
+                //     text: 'ECharts entry example'
+                // },
                 tooltip: {},
                 xAxis: {
-                    data: ['shirt', 'cardign', 'chiffon shirt', 'pants', 'heels', 'socks']
+                    data: ['A', 'B', 'C', 'D', 'E', 'F']
                 },
                 yAxis: {},
                 series: [{
-                    name: 'sales',
+                    name: 'Test',
                     type: 'bar',
-                    data: [5, 20, 36, 10, 10, 20]
+                    data: [getNumber(), getNumber(), getNumber(), getNumber(), getNumber(), getNumber()],
+                    itemStyle: {
+                        color: '#42b983',
+                    },
                 }]
             });
         },
+        methods: {
+            getRandomNumber() {
+                return  Math.round(Math.random() * 100, 0);
+            }
+        }
     }
 
 </script>
