@@ -6,18 +6,25 @@
     <img class="logo" alt="Vue logo" src="./assets/logo.png">
     <span>Table Slot include Custom Table</span>
     <Table />
+    <img class="logo" alt="Vue logo" src="./assets/logo.png">
+    <span>Interactive Test</span>
+    <div class="demo">
+      <item/>
+    </div>
   </div>
 </template>
 
 <script>
 import ChartTest from './components/ChartTest.vue'
 import Table from './components/Table.vue'
+import Item from './components/Item.vue'
 
 export default {
   name: 'App',
   components: {
     ChartTest,
     Table,
+    Item,
   }
 }
 </script>
@@ -35,5 +42,13 @@ export default {
 .logo {
   width: 40px; 
   height: 40px;
+}
+
+.demo {
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  background-color: #f5f5f5;
+  position: absolute;
 }
 </style>
